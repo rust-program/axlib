@@ -1,0 +1,25 @@
+[package]
+name = "axlib-frame-cli"
+version = "4.0.0-dev"
+authors = ["Axia Technologies <admin@axiacoin.network>"]
+edition = "2021"
+license = "Apache-2.0"
+homepage = "https://axlib.io"
+repository = "https://github.com/axiatech/axlib/"
+description = "cli interface for FRAME"
+documentation = "https://docs.rs/axlib-frame-cli"
+readme = "README.md"
+
+[dependencies]
+clap = { version = "3.0", features = ["derive"] }
+
+sp-core = { version = "5.0.0", path = "../../../primitives/core" }
+sc-cli = { version = "0.10.0-dev", path = "../../../client/cli" }
+sp-runtime = { version = "5.0.0", path = "../../../primitives/runtime" }
+frame-system = { version = "4.0.0-dev", path = "../../../frame/system" }
+frame-support = { version = "4.0.0-dev", path = "../../../frame/support" }
+
+[dev-dependencies]
+
+[features]
+default = []
